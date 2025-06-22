@@ -6,14 +6,14 @@
 
     <groupId>vn.vinaacademy</groupId>
     <artifactId>vinaacademy-parent</artifactId>
-    <version>1.0.0</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
 
     <name>VinaAcademy Parent</name>
     <description>Shared parent POM</description>
 
     <properties>
-        <revision>1.0.0</revision>
+        <revision>1.0.1-SNAPSHOT1</revision>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -32,8 +32,20 @@
         <com.google.protobuf.version>4.28.2</com.google.protobuf.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.github.VinaAcademy</groupId>
+                <artifactId>common-library</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>

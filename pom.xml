@@ -13,8 +13,8 @@
     <description>Shared parent POM</description>
 
     <properties>
-        <revision>1.0.1-SNAPSHOT</revision>
-        <common.version>1.0.0</common.version>
+        <revision>1.0.1-ALPHA</revision>
+        <common.version>1.0.1-SNAPSHOT</common.version>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
